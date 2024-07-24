@@ -34,7 +34,7 @@ initGame();
 
 function swapTurn() {
     if(currentPlayer === "X") {
-        currentPlayer ="0";
+        currentPlayer ="O";
     }
     else {
         currentPlayer ="X";
@@ -50,7 +50,7 @@ function checkGameOver() {
             if(gameGrid[position[0]] === "X")
                 answer ="X";
             else 
-            answer ="0";
+            answer ="O";
         //disable we have a winner
         boxes.forEach((box)=>{
             box.style.pointerEvents ="none";
